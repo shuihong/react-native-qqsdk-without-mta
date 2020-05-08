@@ -105,7 +105,7 @@ function findFileByAppName(array, appName) {
 function removeFrameworkAndSearchPath() {
   var projectPath = glob.sync("**/project.pbxproj", ignoreNodeModules)[0];
   var project = xcode.project(projectPath);
-  var frameworkPath = path.join(__dirname,'../node_modules/react-native-qqsdk/ios/RCTQQSDK/TencentOpenAPI.framework');
+  var frameworkPath = path.join(__dirname,'../node_modules/react-native-qqsdk-without-mta/ios/RCTQQSDK/TencentOpenAPI.framework');
   var project_dir = path.join(__dirname);
   var project_relative = path.relative(project_dir, frameworkPath);
   project.parse(function (error) {
@@ -120,7 +120,7 @@ function removeFrameworkAndSearchPath() {
       project.removeFromFrameworksPbxGroup(file);           // PBXGroup
       project.removeFromPbxFrameworksBuildPhase(file);      // PBXFrameworksBuildPhase
       //project.removeFromFrameworkSearchPaths(file);
-      removeSearchPaths(project,'"$(SRCROOT)/../node_modules/react-native-qqsdk/ios/RCTQQSDK/**"');
+      removeSearchPaths(project,'"$(SRCROOT)/../node_modules/react-native-qqsdk-without-mta/ios/RCTQQSDK/**"');
       fs.writeFileSync(projectPath, project.writeSync());
     }
   });

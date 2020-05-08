@@ -145,14 +145,14 @@ function addAppIdToGradle() {
       fs.writeFileSync(buildGradlePath, buildGradleContents);
     });
   } else {
-    console.log('App ID 可能已存在，如果要进行修改请在react-native-qqsdk的Gradle文件中手动修改Android App ID');
+    console.log('App ID 可能已存在，如果要进行修改请在react-native-qqsdk-without-mta的Gradle文件中手动修改Android App ID');
   }
 }
 
 function addFrameworkAndSearchPath() {
   var projectPath = glob.sync("**/project.pbxproj", ignoreNodeModules)[0];
   var project = xcode.project(projectPath);
-  var frameworkPath = path.join(__dirname,'../node_modules/react-native-qqsdk/ios/RCTQQSDK/TencentOpenAPI.framework');
+  var frameworkPath = path.join(__dirname,'../node_modules/react-native-qqsdk-without-mta/ios/RCTQQSDK/TencentOpenAPI.framework');
   var project_dir = path.join(__dirname);
   var project_relative = path.relative(project_dir, frameworkPath);
     project.parse(function (error) {
@@ -170,7 +170,7 @@ function addFrameworkAndSearchPath() {
          project.addToFrameworksPbxGroup(file);         // PBXGroup
          project.addToPbxFrameworksBuildPhase(file);    // PBXFrameworksBuildPhase
          //project.addToFrameworkSearchPaths(file);
-        addSearchPaths(project,'"$(SRCROOT)/../node_modules/react-native-qqsdk/ios/RCTQQSDK/**"');
+        addSearchPaths(project,'"$(SRCROOT)/../node_modules/react-native-qqsdk-without-mta/ios/RCTQQSDK/**"');
         fs.writeFileSync(projectPath, project.writeSync());
       }
     });

@@ -1,8 +1,8 @@
-# react-native-qqsdk
-[![npm](https://img.shields.io/npm/v/react-native-qqsdk.svg)](https://www.npmjs.com/package/react-native-qqsdk)
-[![npm](https://img.shields.io/npm/dm/react-native-qqsdk.svg)](https://www.npmjs.com/package/react-native-qqsdk)
-[![platform](https://img.shields.io/badge/platform-iOS%2FAndroid-lightgrey.svg?style=flat)](https://github.com/iVanPan/react-native-qqsdk)
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat)](https://github.com/iVanPan/react-native-qqsdk/blob/master/LICENSE)
+# react-native-qqsdk-without-mta
+[![npm](https://img.shields.io/npm/v/react-native-qqsdk-without-mta.svg)](https://www.npmjs.com/package/react-native-qqsdk-without-mta)
+[![npm](https://img.shields.io/npm/dm/react-native-qqsdk-without-mta.svg)](https://www.npmjs.com/package/react-native-qqsdk-without-mta)
+[![platform](https://img.shields.io/badge/platform-iOS%2FAndroid-lightgrey.svg?style=flat)](https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta)
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat)](https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta/blob/master/LICENSE)
 
 
 A React Native wrapper around the Tencent QQ SDK for Android and iOS. Provides access to QQ ssoLogin, QQ Sharing, QQ Zone Sharing etc.
@@ -46,16 +46,16 @@ A React Native wrapper around the Tencent QQ SDK for Android and iOS. Provides a
 
 ## Installation
 ```shell
-npm install --save react-native-qqsdk@latest
+npm install --save react-native-qqsdk-without-mta@latest
 ```
 ### RNPM
 ```
- react-native link react-native-qqsdk
+ react-native link react-native-qqsdk-without-mta
 ```
 ### CocoaPods
 1. Install package from npm
 ```shell
-npm install --save react-native-qqsdk@latest
+npm install --save react-native-qqsdk-without-mta@latest
 ```
 2. Create a Podfile
 3. Add pod in Podfile something similar to this:
@@ -71,20 +71,20 @@ pod 'React', :path => '../node_modules/react-native', :subspecs => [
   'DevSupport'
 ]
 pod "Yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
-pod "react-native-qqsdk", :path => "../node_modules/react-native-qqsdk"
+pod "react-native-qqsdk-without-mta", :path => "../node_modules/react-native-qqsdk-without-mta"
 ```
 4. Pod install
 5. Follow step 7,8,9 in iOS Setup
 
 ### Manual
 ```shell
-npm install --save react-native-qqsdk@latest
+npm install --save react-native-qqsdk-without-mta@latest
 ```
 #### iOS Setup
 
 1. Open your app's Xcode project
 
-2. Find the `RCTQQSDK.xcodeproj` file within the `node_modules/react-native-qqsdk/ios` directory  and drag it into the `Libraries` node in Xcode
+2. Find the `RCTQQSDK.xcodeproj` file within the `node_modules/react-native-qqsdk-without-mta/ios` directory  and drag it into the `Libraries` node in Xcode
 
 3. Select the project node in Xcode and select the "Build Phases" tab of your project configuration.
 
@@ -92,12 +92,12 @@ npm install --save react-native-qqsdk@latest
 
 5. Click the plus sign underneath the "Link Binary With Libraries" list and add the `libz.tbd,libiconv.tdb,libstdc++.tbd,libsqlite3.tbd,Security.framework,SystemConfiguration.framework,CoreTelephony.framework,CoreGraphics.framework` library .
 
-6. Click the plus sign underneath the "Link Binary With Libraries" list and add the TencentOpenAPI.framework which locate in `../node_modules/react-native-qqsdk/ios/RCTQQSDK`. Then Under the "Build Settings" tab of your project configuration, find the "Framework Search Paths" section and edit the value. Add a new value, `$(SRCROOT)/../node_modules/react-native-qqsdk/ios/RCTQQSDK`.
+6. Click the plus sign underneath the "Link Binary With Libraries" list and add the TencentOpenAPI.framework which locate in `../node_modules/react-native-qqsdk-without-mta/ios/RCTQQSDK`. Then Under the "Build Settings" tab of your project configuration, find the "Framework Search Paths" section and edit the value. Add a new value, `$(SRCROOT)/../node_modules/react-native-qqsdk-without-mta/ios/RCTQQSDK`.
 
 7. Under the "Info" tab of your project configuration, find the "URL Types" section and add your app Id.
 
 8. Under the "Info" tab of your project configuration, add LSApplicationQueriesSchemes For QQ SDK.
-  ![Add LSApplicationQueriesSchemes](https://github.com/iVanPan/react-native-qqsdk/blob/master/asset/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-13%2013.47.15.png)
+  ![Add LSApplicationQueriesSchemes](https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta/blob/master/asset/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-12-13%2013.47.15.png)
 9. add following code to your AppDelegate.m 
 ```objectiv-c
 ...
@@ -116,17 +116,17 @@ npm install --save react-native-qqsdk@latest
 1. In your `android/settings.gradle` file, make the following additions:
 
     ```gradle
-    include ':app', ':react-native-qqsdk'
-    project(':react-native-qqsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-qqsdk/android')
+    include ':app', ':react-native-qqsdk-without-mta'
+    project(':react-native-qqsdk-without-mta').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-qqsdk-without-mta/android')
     ```
 
-2. In your `android/app/build.gradle` file, add the `:react-native-qqsdk` project as a compile-time dependency:
+2. In your `android/app/build.gradle` file, add the `:react-native-qqsdk-without-mta` project as a compile-time dependency:
 
     ```gradle
     ...
     dependencies {
         ...
-        compile project(':react-native-qqsdk')
+        compile project(':react-native-qqsdk-without-mta')
     }
     ```
 3. add App ID to `$RNProjectRoot/package.json`
@@ -137,7 +137,7 @@ npm install --save react-native-qqsdk@latest
 }
 ```
         
-4.Update the `MainApplication.java` file to use react-native-qqsdk via the following changes:
+4.Update the `MainApplication.java` file to use react-native-qqsdk-without-mta via the following changes:
 
 ```java
 ...
@@ -198,7 +198,7 @@ public class MainApplication extends Application implements ReactApplication {
 ### Usage
 ##### checkClientInstalled
 ```js
-import * as QQ from 'react-native-qqsdk';
+import * as QQ from 'react-native-qqsdk-without-mta';
 QQ.isQQClientInstalled()
   .then(()=>{console.log('Installed')})
   .catch(()=>{console.log('not installed')});
@@ -206,7 +206,7 @@ QQ.isQQClientInstalled()
 ```
 ##### ssoLogin
 ```js
-import * as QQ from 'react-native-qqsdk';
+import * as QQ from 'react-native-qqsdk-without-mta';
 QQ.ssoLogin()
   .then((result)=>{console.log('result is', result)})
   .catch((error)=>{console.log('error is', error)});
@@ -214,7 +214,7 @@ QQ.ssoLogin()
 ```
 ##### logout
 ```js
-import * as QQ from 'react-native-qqsdk';
+import * as QQ from 'react-native-qqsdk-without-mta';
 QQ.logout()
   .then((result)=>{console.log('result is', result)})
   .catch((error)=>{console.log('error is', error)});
@@ -222,7 +222,7 @@ QQ.logout()
 ```
 ##### shareText
 ```js
-import * as QQ from 'react-native-qqsdk';
+import * as QQ from 'react-native-qqsdk-without-mta';
 QQ.shareText('分享文字',QQ.shareScene.QQ)
   .then((result)=>{console.log('result is', result)})
   .catch((error)=>{console.log('error is', error)});
@@ -230,7 +230,7 @@ QQ.shareText('分享文字',QQ.shareScene.QQ)
 ```
 ##### shareImage
 ```js
-import * as QQ from 'react-native-qqsdk';
+import * as QQ from 'react-native-qqsdk-without-mta';
 const imgUrl = 'https://y.gtimg.cn/music/photo_new/T001R300x300M000003Nz2So3XXYek.jpg';
 QQ.shareImage(imgUrl,'分享标题','分享描述',QQ.shareScene.QQ)
   .then((result)=>{console.log('result is', result)})
@@ -239,7 +239,7 @@ QQ.shareImage(imgUrl,'分享标题','分享描述',QQ.shareScene.QQ)
 ```
 ##### shareNews
 ```js
-import * as QQ from 'react-native-qqsdk';
+import * as QQ from 'react-native-qqsdk-without-mta';
 import resolveAssetSource from 'resolveAssetSource';
 QQ.shareNews('https://facebook.github.io/react-native/',resolveAssetSource(require('./news.jpg')).uri,'分享新闻标题','分享新闻描述',QQ.shareScene.QQ)
 .then((result)=>{console.log('result is', result)})
@@ -248,7 +248,7 @@ QQ.shareNews('https://facebook.github.io/react-native/',resolveAssetSource(requi
 ```
 ##### shareAudio
 ```js
-import * as QQ from 'react-native-qqsdk';
+import * as QQ from 'react-native-qqsdk-without-mta';
 const audioPreviewUrl = 'https://y.qq.com/portal/song/001OyHbk2MSIi4.html';
 const audioUrl = 'http://stream20.qqmusic.qq.com/30577158.mp3';
 const imgUrl = 'https://y.gtimg.cn/music/photo_new/T001R300x300M000003Nz2So3XXYek.jpg';
@@ -273,5 +273,5 @@ Feel free to contribute
                 
 ## License
 
-**react-native-qqsdk** is released under the **MIT** license. See [LICENSE](https://github.com/iVanPan/react-native-qqsdk/blob/master/LICENSE) file for more information.
+**react-native-qqsdk-without-mta** is released under the **MIT** license. See [LICENSE](https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta/blob/master/LICENSE) file for more information.
 

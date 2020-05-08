@@ -1,7 +1,7 @@
 {
-  "name": "react-native-qqsdk",
+  "name": "react-native-qqsdk-without-mta",
   "version": "0.8.3",
-  "description": "react-native wrapper for qq sdk",
+  "description": "react-native wrapper for qq sdk without mta",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,12 +9,12 @@
   "author": "https://github.com/AbhiSNSoft",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AbhiSNSoft/react-native-qqsdk/issues"
+    "url": "https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta/issues"
   },
-  "homepage": "https://github.com/AbhiSNSoft/react-native-qqsdk",
+  "homepage": "https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AbhiSNSoft/react-native-qqsdk.git"
+    "url": "git+https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta.git"
   },
   "keywords": [
     "ecosystem:react-native",
@@ -54,8 +54,8 @@
       ]
     },
     "commands": {
-      "postlink": "node node_modules/react-native-qqsdk/scripts/postlink/postlink",
-      "postunlink": "node node_modules/react-native-qqsdk/scripts/postunlink/postunlink"
+      "postlink": "node node_modules/react-native-qqsdk-without-mta/scripts/postlink/postlink",
+      "postunlink": "node node_modules/react-native-qqsdk-without-mta/scripts/postunlink/postunlink"
     }
   }
 }

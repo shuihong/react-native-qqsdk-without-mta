@@ -10,7 +10,7 @@ import {
   View
 } from 'react-native';
 import {Navigator} from 'react-native-deprecated-custom-components';
-import * as QQ from 'react-native-qqsdk';
+import * as QQ from 'react-native-qqsdk-without-mta';
 import NavigationBar from './navigationBar';
 import resolveAssetSource from 'resolveAssetSource';
 export default class QQShare extends Component {

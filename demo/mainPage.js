@@ -8,7 +8,7 @@ import {
   View
 } from 'react-native';
 import {Navigator} from 'react-native-deprecated-custom-components';
-import * as QQ from 'react-native-qqsdk';
+import * as QQ from 'react-native-qqsdk-without-mta';
 import NavigationBar from './navigationBar';
 import QQShare from './QQShare';
 import QQZone from './QQZoneShare';
