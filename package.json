@@ -1,6 +1,6 @@
 {
   "name": "react-native-qqsdk-without-mta",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "react-native wrapper for qq sdk without mta",
   "main": "index.js",
   "scripts": {
