@@ -6,15 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "https://github.com/AbhiSNSoft",
+  "author": "https://github.com/shuihong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta/issues"
+    "url": "https://github.com/shuihong/react-native-qqsdk-without-mta/issues"
   },
-  "homepage": "https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta",
+  "homepage": "https://github.com/shuihong/react-native-qqsdk-without-mta",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta.git"
+    "url": "git+https://github.com/shuihong/react-native-qqsdk-without-mta.git"
   },
   "keywords": [
     "ecosystem:react-native",
