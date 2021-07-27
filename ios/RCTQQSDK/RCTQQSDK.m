@@ -57,7 +57,7 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(checkClientInstalled
                   :(RCTPromiseResolveBlock)resolve
                   :(RCTPromiseRejectBlock)reject) {
-    if ([TencentOAuth iphoneQQInstalled] && [TencentOAuth iphoneQQSupportSSOLogin]) {
+    if ([TencentOAuth iphoneQQInstalled]) {
         resolve(@YES);
     } else {
         reject(@"404", QQ_NOT_INSTALLED, nil);
@@ -76,8 +76,6 @@ RCT_EXPORT_METHOD(ssoLogin
                                         kOPEN_PERMISSION_GET_USER_INFO,
                                         kOPEN_PERMISSION_GET_SIMPLE_USER_INFO,
                                         kOPEN_PERMISSION_ADD_ALBUM,
-                                        kOPEN_PERMISSION_ADD_ONE_BLOG,
-                                        kOPEN_PERMISSION_ADD_SHARE,
                                         kOPEN_PERMISSION_ADD_TOPIC,
                                         kOPEN_PERMISSION_CHECK_PAGE_FANS,
                                         kOPEN_PERMISSION_GET_INFO,
