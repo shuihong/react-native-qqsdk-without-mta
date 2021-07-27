@@ -266,12 +266,12 @@ http.get(url)
 
 
 ## About SDK 
-This plugin use 3.2.1 version sdk for Android,3.2.3 version sdk for iOS. You can download lastest version sdk [here](http://wiki.open.qq.com/wiki/mobile/SDK%E4%B8%8B%E8%BD%BD)                        
+This plugin use 3.5.3 version sdk for Android,3.2.3 version sdk for iOS. You can download lastest version sdk [here](http://wiki.open.qq.com/wiki/mobile/SDK%E4%B8%8B%E8%BD%BD)                        
 
 ## Contributing
 Feel free to contribute
                 
 ## License
 
-**react-native-qqsdk-without-mta** is released under the **MIT** license. See [LICENSE](https://github.com/AbhiSNSoft/react-native-qqsdk-without-mta/blob/master/LICENSE) file for more information.
+**react-native-qqsdk-without-mta** is released under the **MIT** license. See [LICENSE](https://github.com/shuihong/react-native-qqsdk-without-mta/blob/master/LICENSE) file for more information.
 

@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		219489041DED59BC009FE82E /* RCTQQSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 219489031DED59BC009FE82E /* RCTQQSDK.m */; };
 		219489051DED59BC009FE82E /* RCTQQSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 219489021DED59BC009FE82E /* RCTQQSDK.h */; };
-		2194890D1DED5A33009FE82E /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2194890B1DED5A33009FE82E /* TencentOpenAPI.framework */; };
-		2194890F1DED5A5B009FE82E /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2194890C1DED5A33009FE82E /* TencentOpenApi_IOS_Bundle.bundle */; };
 		21B8027D1DF52E1900480898 /* RCTConvert+QQShareScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B8027C1DF52E1900480898 /* RCTConvert+QQShareScene.m */; };
+		9D7B1CE626AFB93D0033A10E /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D7B1CE426AFB9300033A10E /* TencentOpenApi_IOS_Bundle.bundle */; };
+		9D7B1CE826AFB95D0033A10E /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7B1CE726AFB95D0033A10E /* TencentOpenAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,10 +31,10 @@
 		219488FF1DED59BC009FE82E /* libRCTQQSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTQQSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		219489021DED59BC009FE82E /* RCTQQSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTQQSDK.h; sourceTree = "<group>"; };
 		219489031DED59BC009FE82E /* RCTQQSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTQQSDK.m; sourceTree = "<group>"; };
-		2194890B1DED5A33009FE82E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
-		2194890C1DED5A33009FE82E /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
 		21B8027B1DF52E1900480898 /* RCTConvert+QQShareScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+QQShareScene.h"; sourceTree = "<group>"; };
 		21B8027C1DF52E1900480898 /* RCTConvert+QQShareScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+QQShareScene.m"; sourceTree = "<group>"; };
+		9D7B1CE426AFB9300033A10E /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		9D7B1CE726AFB95D0033A10E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2194890D1DED5A33009FE82E /* TencentOpenAPI.framework in Frameworks */,
+				9D7B1CE826AFB95D0033A10E /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,8 +68,8 @@
 		219489011DED59BC009FE82E /* RCTQQSDK */ = {
 			isa = PBXGroup;
 			children = (
-				2194890B1DED5A33009FE82E /* TencentOpenAPI.framework */,
-				2194890C1DED5A33009FE82E /* TencentOpenApi_IOS_Bundle.bundle */,
+				9D7B1CE726AFB95D0033A10E /* TencentOpenAPI.framework */,
+				9D7B1CE426AFB9300033A10E /* TencentOpenApi_IOS_Bundle.bundle */,
 				219489021DED59BC009FE82E /* RCTQQSDK.h */,
 				219489031DED59BC009FE82E /* RCTQQSDK.m */,
 				21B8027B1DF52E1900480898 /* RCTConvert+QQShareScene.h */,
@@ -119,6 +119,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 219488F61DED59BC009FE82E;
@@ -136,7 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2194890F1DED5A5B009FE82E /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				9D7B1CE626AFB93D0033A10E /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
